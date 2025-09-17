@@ -1,18 +1,21 @@
 apiVersion: harness.io/v1
 kind: Resource
-name: gcp-loren-sb
-identifier: gcplorensb
 type: environment
+identifier: gcplorensb
+name: gcp-loren-sb
 owner: user:account/loren.yeung@harness.io
-projectIdentifier: idpgenerated
 orgIdentifier: default
+projectIdentifier: idpgenerated
 spec:
   lifecycle: experimental
   dependsOn:
-    - system:account.default.idpgenerated/gcplorenserviceproject
+  - system:account.default.idpgenerated/gcplorenserviceproject
 metadata:
   description: sandbox environment resource
   links:
-    - url: https://dashboard.example.com
-      title: My Dashboard
-      icon: dashboard
+  - url: https://dashboard.example.com
+    title: My Dashboard
+    icon: dashboard
+  tags:
+  - environment
+  - sandbox
