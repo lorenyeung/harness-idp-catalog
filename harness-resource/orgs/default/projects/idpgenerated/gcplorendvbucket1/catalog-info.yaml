@@ -11,7 +11,7 @@ spec:
   dependsOn:
     - system:account.default.idpgenerated/gcplorendv
 metadata:
-  description: something
+  description: a bucket in dv
   links:
     - url: https://dashboard.example.com
       title: My Dashboard
