@@ -11,7 +11,7 @@ spec:
   dependsOn:
     - resource:account.default.idpgenerated/gcplorensb
 metadata:
-  description: VPC 1 in sandbox
+  description: VPC 2 in sandbox
   links:
     - url: https://dashboard.example.com
       title: My Dashboard
