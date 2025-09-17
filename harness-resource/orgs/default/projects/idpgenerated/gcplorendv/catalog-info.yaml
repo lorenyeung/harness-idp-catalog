@@ -13,6 +13,6 @@ spec:
 metadata:
   description: dev environment resource
   links:
-    - url: https://dashboard.example.com
+    - url: https://dashboard.google.com
       title: My Dashboard
       icon: dashboard
