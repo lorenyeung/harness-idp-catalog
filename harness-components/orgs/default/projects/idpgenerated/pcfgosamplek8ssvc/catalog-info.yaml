@@ -1,0 +1,46 @@
+apiVersion: harness.io/v1
+kind: Component
+name: gcp-go-sample-k8s-svc
+identifier: gcpgosamplek8ssvc
+type: bucket
+owner: user:account/loren.yeung@harness.io
+projectIdentifier: idpgenerated
+orgIdentifier: default
+spec:
+  lifecycle: experimental
+  providesApi:
+    - api:account/modular-openapi
+  dependsOn:
+    - resource:account.default.idpgenerated/gcplorendv
+    - component:account/allure
+    - component:account/allure-testng-example
+  consumesApi:
+    - api:account/harness-api 
+metadata:
+  description: a component in dv
+  links:
+    - url: https://dashboard.example.com
+      title: My Dashboard
+      icon: dashboard
+  dev_restarts: "4"
+  annotations:
+    backstage.io/kubernetes-id: colima-k8s
+    backstage.io/kubernetes-label-selector: app=pcfgosampleappk8ssvc
+    github.com/project-slug: lorenyeung/pcf-go-sample-app
+    harness.io/project-url: https://app.harness.io/ng/account/WqS38aeyQjayoqy6mzwceA/home/orgs/default/projects/technical_exercise/details
+    backstage.io/techdocs-ref: url:https://app.harness.io/ng/account/WqS38aeyQjayoqy6mzwceA/module/code/orgs/default/projects/idpgenerated/repos/idp-mkdocs-test/files/main/~/documented-component
+    backstage.io/kubernetes-namespace: loren-dev
+    jenkins.io/job-full-name: colima:build1
+    harness.io/services: |
+      pcfgosampleappk8ssvc: https://app.harness.io/ng/account/WqS38aeyQjayoqy6mzwceA/cd/orgs/default/projects/technical_exercise/services/pcfgosampleappk8ssvc
+      pcfgosampleappk8ssvc GDEV: https://app.harness.io/ng/account/WqS38aeyQjayoqy6mzwceA/all/orgs/default/projects/technical_exercise/pipelines/cd_blue_green_kubernetes_cv_istio/pipeline-studio/?storeType=INLINE&stageId=rolling&sectionId=OVERVIEW
+      pcfgosampleappk8ssvc GQA: https://app.harness.io/ng/account/WqS38aeyQjayoqy6mzwceA/all/orgs/default/projects/technical_exercise/pipelines/cd_blue_green_kubernetes_cv_istio/pipeline-studio/?storeType=INLINE&stageId=rolling&sectionId=OVERVIEW
+    harness.io/cd-serviceId: pcfgosampleappk8ssvc
+    harness.io/pipelines: |
+      pcfgosampleappk8ssvc-CI: https://app.harness.io/ng/account/WqS38aeyQjayoqy6mzwceA/all/orgs/default/projects/technical_exercise/pipelines/cd_blue_green_kubernetes_traffic_shift_test_set_in_deploy/pipeline-studio/?storeType=INLINE&stageId=cd&sectionId=OVERVIEW
+      pcfgosampleappk8ssvc GoldenDev: https://app.harness.io/ng/account/WqS38aeyQjayoqy6mzwceA/all/orgs/default/projects/technical_exercise/pipelines/cd_blue_green_kubernetes_traffic_shift_test_set_in_deploy/pipeline-studio/?storeType=INLINE&stageId=cd&sectionId=OVERVIEW
+      pcfgosampleappk8ssvc GoldenQA: https://app.harness.io/ng/account/WqS38aeyQjayoqy6mzwceA/all/orgs/default/projects/technical_exercise/pipelines/cd_blue_green_kubernetes_traffic_shift_test_set_in_deploy/pipeline-studio/?storeType=INLINE&stageId=cd&sectionId=OVERVIEW
+    backstage.io/source-location: url:https://github.com/lorenyeung/pcf-go-sample-app/tree/main
+  release_version: lorenharness/pcf-go-sample-app:1.0.22 lorenharness/pcf-go-sample-app:1.0.22
+  restarts: "0"
+  releaseVersion: 3.6.25

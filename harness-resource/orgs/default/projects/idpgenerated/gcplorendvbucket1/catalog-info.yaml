@@ -9,7 +9,7 @@ orgIdentifier: default
 spec:
   lifecycle: experimental
   dependsOn:
-    - system:account.default.idpgenerated/gcplorendv
+    - resource:account.default.idpgenerated/gcplorendv
 metadata:
   description: a bucket in dv
   links:
