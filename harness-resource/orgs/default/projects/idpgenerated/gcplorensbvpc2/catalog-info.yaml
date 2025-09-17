@@ -9,7 +9,7 @@ orgIdentifier: default
 spec:
   lifecycle: experimental
   dependsOn:
-    - system:account.default.idpgenerated/gcplorensb
+    - resource:account.default.idpgenerated/gcplorensb
 metadata:
   description: VPC 1 in sandbox
   links:
