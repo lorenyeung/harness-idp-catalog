@@ -1,18 +1,21 @@
 apiVersion: harness.io/v1
 kind: Resource
-name: gcp-loren-dv-bucket-1
-identifier: gcplorendvbucket1
 type: bucket
+identifier: gcplorendvbucket1
+name: gcp-loren-dv-bucket-1
 owner: user:account/loren.yeung@harness.io
-projectIdentifier: idpgenerated
 orgIdentifier: default
+projectIdentifier: idpgenerated
 spec:
   lifecycle: experimental
   dependsOn:
-    - resource:account.default.idpgenerated/gcplorendv
+  - resource:account.default.idpgenerated/gcplorendv
 metadata:
   description: a bucket in dv
   links:
-    - url: https://dashboard.example.com
-      title: My Dashboard
-      icon: dashboard
+  - url: https://dashboard.example.com
+    title: My Dashboard
+    icon: dashboard
+  tags:
+  - dev
+  - bucket
