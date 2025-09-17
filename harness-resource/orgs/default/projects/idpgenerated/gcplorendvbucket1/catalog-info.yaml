@@ -9,7 +9,7 @@ orgIdentifier: default
 spec:
   lifecycle: experimental
   dependsOn:
-    - system:account.default.idpgenerated/gcplorenserviceproject
+    - system:account.default.idpgenerated/gcplorendv
 metadata:
   description: something
   links:
