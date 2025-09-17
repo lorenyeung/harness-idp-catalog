@@ -1,0 +1,16 @@
+apiVersion: harness.io/v1
+kind: System
+name: gcp-loren-service-project
+identifier: gcplorenserviceproject
+type: gcp
+owner: user:account/loren.yeung@harness.io
+projectIdentifier: idpgenerated
+orgIdentifier: default
+spec:
+  lifecycle: "experimental"
+metadata:
+  description: gcp-loren service project system
+  links:
+    - url: https://dashboard.example.com
+      title: My Dashboard
+      icon: dashboard

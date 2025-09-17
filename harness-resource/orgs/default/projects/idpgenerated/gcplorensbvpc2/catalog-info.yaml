@@ -1,0 +1,18 @@
+apiVersion: harness.io/v1
+kind: Resource
+name: gcp-loren-sb-vpc-2
+identifier: gcplorensbvpc2
+type: vpc
+owner: user:account/loren.yeung@harness.io
+projectIdentifier: idpgenerated
+orgIdentifier: default
+spec:
+  lifecycle: experimental
+  dependsOn:
+    - system:project/gcplorensb
+metadata:
+  description: VPC 1 in sandbox
+  links:
+    - url: https://dashboard.example.com
+      title: My Dashboard
+      icon: dashboard

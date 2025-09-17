@@ -1,0 +1,18 @@
+apiVersion: harness.io/v1
+kind: Resource
+name: gcp-loren-dv
+identifier: gcplorendv
+type: environment
+owner: user:account/loren.yeung@harness.io
+projectIdentifier: idpgenerated
+orgIdentifier: default
+spec:
+  lifecycle: experimental
+  dependsOn:
+    - system:project/gcplorenserviceproject
+metadata:
+  description: dev environment resource
+  links:
+    - url: https://dashboard.example.com
+      title: My Dashboard
+      icon: dashboard
