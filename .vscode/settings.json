@@ -1,6 +1,0 @@
-{
-    "yaml.schemas": {
-        "https://raw.githubusercontent.com/harness/harness-schema/main/v0/pipeline.json": "pipeline.yaml",
-        "https://www.schemastore.org/yamllint.json": "file:///Users/lorenyeung/harness-idp-catalog/harness-resource/orgs/default/projects/idpgenerated/gcplorensbvpc2/catalog-info.yaml"
-    }
-}
